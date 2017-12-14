@@ -16,7 +16,7 @@ run-simulator: build-simulator delete-results
 	mono --debug $(TOUCH_SERVER) \
 	--launchsim ./bin/iPhoneSimulator/Debug/UnitTestSample.app \
 	-autoexit -skipheader \
-	-logfile=$(TEST_RESULT)
+	-logfile=$(TEST_RESULT) \
 	--verbose \
 	--device=":v2:runtime=com.apple.CoreSimulator.SimRuntime.iOS-11-2,devicetype=com.apple.CoreSimulator.SimDeviceType.iPhone-SE"
 
